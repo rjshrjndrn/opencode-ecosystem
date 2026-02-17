@@ -1,0 +1,15 @@
+Manage git worktrees to work on multiple branches simultaneously without stashing or committing incomplete work.
+
+This tool provides operations to:
+- List all existing worktrees with their branches and paths
+- Create new worktrees with automatic branch creation
+- Remove worktrees cleanly (including their branches)
+- Switch between worktrees by changing directory
+
+Worktrees are useful for:
+- Code reviews (checkout PR branches in isolation)
+- Hotfixes (work on urgent fixes without disturbing feature work)
+- Long-running experiments (try ideas without affecting main work)
+- CI/CD testing (verify builds in clean environments)
+
+The main worktree cannot be removed. Branch names are automatically prefixed with 'worktree/' unless explicitly provided with the prefix.
